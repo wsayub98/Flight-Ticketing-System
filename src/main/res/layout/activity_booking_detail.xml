@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookingDetail">
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="188dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="left"
+        android:text="RETURN DATE"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_date_return"
+        app:layout_constraintEnd_toStartOf="@+id/textView19"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_price_return"
+        android:layout_width="112dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginBottom="11dp"
+        android:textColor="#30D637"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_destination_return"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_date_return"
+        android:layout_width="166dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginRight="72dp"
+        android:layout_marginBottom="14dp"
+        android:gravity="start"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_destination_return"
+        app:layout_constraintEnd_toStartOf="@+id/tv_price_return"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_info_return"
+        android:layout_width="321dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="48dp"
+        android:gravity="start|left"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_totalprice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="111dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginBottom="10dp"
+        android:text="Return total"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_price_return"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/BookDtlBtn"
+        android:layout_width="413dp"
+        android:layout_height="60dp"
+        android:background="#800000"
+        android:includeFontPadding="false"
+        android:text="@string/pay_now"
+        android:textColor="#FFFECE"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_info_depart"
+        android:layout_width="331dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="60dp"
+        android:gravity="start|left"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_destination_depart"
+        android:layout_width="350dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginBottom="9dp"
+        android:gravity="start|center_horizontal"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_info_depart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_destination_return"
+        android:layout_width="350dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="start|center_horizontal"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_info_return"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="188dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="7dp"
+        android:gravity="left"
+        android:text="DEPART DATE"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_date_depart"
+        app:layout_constraintEnd_toStartOf="@+id/textView17"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_date_depart"
+        android:layout_width="166dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginRight="72dp"
+        android:layout_marginBottom="21dp"
+        android:gravity="start"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_destination_depart"
+        app:layout_constraintEnd_toStartOf="@+id/tv_price_depart"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="411dp"
+        android:layout_height="59dp"
+        android:background="#800000"
+        android:gravity="center"
+        android:text="@string/booking_detail"
+        android:textColor="#FFFECE"
+        android:textSize="36sp"
+        app:fontFamily="sans-serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_price_depart"
+        android:layout_width="112dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginBottom="18dp"
+        android:textColor="#30D637"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_destination_depart"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="111dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginBottom="9dp"
+        android:text="Depart total"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_price_depart"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_totalprice"
+        android:layout_width="90dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="22dp"
+        android:textColor="#30D637"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/BookDtlBtn"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="206dp"
+        android:layout_marginLeft="206dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginRight="34dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center|right"
+        android:text="Total :"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/BookDtlBtn"
+        app:layout_constraintEnd_toStartOf="@+id/tv_totalprice"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

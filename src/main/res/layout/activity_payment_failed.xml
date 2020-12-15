@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentFailed">
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="200dp"
+        android:layout_height="57dp"
+        android:background="#800000"
+        android:gravity="center"
+        android:text="HOME"
+        android:textColor="#FFFECE"
+        android:textSize="24sp"
+        app:fontFamily="sans-serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="211dp" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="200dp"
+        android:layout_height="57dp"
+        android:background="#800000"
+        android:gravity="center"
+        android:text="TRY AGAIN"
+        android:textColor="#FFFECE"
+        android:textSize="24sp"
+        app:fontFamily="sans-serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="411dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="173dp"
+        android:background="#800000"
+        android:gravity="center"
+        android:textColor="#FFFECE"
+        android:textSize="36sp"
+        app:fontFamily="sans-serif"
+        app:layout_constraintBottom_toTopOf="@+id/textView31"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginEnd="141dp"
+        android:layout_marginRight="141dp"
+        android:layout_marginBottom="9dp"
+        android:text="Oppss!!!"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView32"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="315dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginBottom="28dp"
+        android:gravity="center"
+        android:text="Your ticket purchase have failed"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="93dp"
+        android:layout_marginLeft="93dp"
+        android:layout_marginEnd="93dp"
+        android:layout_marginRight="93dp"
+        android:layout_marginBottom="84dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView34"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/smileyred" />
+</androidx.constraintlayout.widget.ConstraintLayout>

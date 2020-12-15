@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectDebitCard">
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="114dp"
+        android:layout_marginLeft="114dp"
+        android:layout_marginEnd="114dp"
+        android:layout_marginRight="114dp"
+        android:layout_marginBottom="13dp"
+        android:text="Select Debit Card"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/listviewDebitCard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/listviewDebitCard"
+        android:layout_width="360dp"
+        android:layout_height="477dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintBottom_toTopOf="@+id/newCardbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/newCardbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="137dp"
+        android:layout_marginLeft="137dp"
+        android:layout_marginEnd="138dp"
+        android:layout_marginRight="138dp"
+        android:layout_marginBottom="17dp"
+        android:text="New Debit Card"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

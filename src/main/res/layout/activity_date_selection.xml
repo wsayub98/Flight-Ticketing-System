@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DateSelection">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="410dp"
+        android:layout_height="55dp"
+        android:background="#EE911212"
+        android:gravity="center"
+        android:text="DATE SELECTION"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.004" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="410dp"
+        android:layout_height="67dp"
+        android:background="#961111"
+        android:text="CONTINUE"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Your Trip:"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.188" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="198dp"
+        android:layout_height="98dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="0.098">
+
+        <RadioButton
+            android:id="@+id/tripType1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="One Way"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/tripType2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Return Trip"
+            android:textSize="18sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="208dp"
+        android:layout_marginBottom="88dp"
+        android:text="Depature Date"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/radioGroup"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Return Date"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <EditText
+        android:id="@+id/dateDepart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#A20C0C"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/nextButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="0.089" />
+
+    <EditText
+        android:id="@+id/dateReturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:background="#A00B0B"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:layout_constraintVertical_bias="0.072" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
